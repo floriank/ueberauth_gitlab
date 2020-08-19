@@ -29,16 +29,16 @@ defmodule UeberauthGitlab.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:oauth2, "~> 0.9"},
-      {:ueberauth, "~> 0.4"},
+      {:oauth2, "~> 2.0"},
+      {:ueberauth, "~> 0.6"},
 
       # dev/test only dependencies
-      {:credo, "~> 1.0", only: [:dev, :test]},
-      {:exvcr, "~> 0.11.0", only: [:test]},
+      {:credo, "~> 1.4", only: [:dev, :test]},
+      {:exvcr, "~> 0.11", only: [:test]},
 
       # docs dependencies
-      {:earmark, ">= 0.0.0", only: :dev},
-      {:ex_doc, ">= 0.0.0", only: :dev}
+      {:earmark, "~> 1.4", only: :dev},
+      {:ex_doc, "~> 0.2", only: :dev}
     ]
   end
 
